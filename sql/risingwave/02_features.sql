@@ -17,3 +17,5 @@ SELECT customer_state, window_start,
 FROM TUMBLE(orders, purchase_ts, INTERVAL '1 day')
 GROUP BY customer_state, window_start;
 
+
+
